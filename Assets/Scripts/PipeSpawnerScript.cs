@@ -6,7 +6,6 @@ public class PipeSpawner : MonoBehaviour
 
     [SerializeField] private float spawnInterval = 2f; // tweakable delay
     [SerializeField] private float verticalRange = 2f; // how much pipes can vary up/down
-    [SerializeField] private float destroyXPosition = -10f; // X position at which pipes are destroyed
 
     private float timer = 0f;
 
@@ -27,10 +26,7 @@ public class PipeSpawner : MonoBehaviour
             spawnPipe();
         }
 
-        if (transform.position.x < destroyXPosition)
-        {
-            Destroy(gameObject);
-        }
+
     }
 
     void spawnPipe()
