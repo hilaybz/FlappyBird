@@ -26,7 +26,6 @@ public class PipeSpawner : MonoBehaviour
             spawnPipe();
         }
 
-
     }
 
     void spawnPipe()
